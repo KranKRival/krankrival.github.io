@@ -12,19 +12,19 @@ div {
 }
 
 .subpage-slide {
-  position: absolute;
-  background-image: url(../images/gta5.jpg);
-  top:10;
-  left:0;
-  right:0;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;        
-  background-size: cover;
-  z-index: -1;
-  height: 100%;
-  max-height: 750px;
+    position: absolute;
+    background-image: url(../images/RDR2.jpg);
+    top: 10;
+    left: 0;
+    right: 0;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+    height: 100%;
+    max-height: 750px;
 }
 
 .body-content {
