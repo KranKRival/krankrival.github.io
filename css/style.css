@@ -1,0 +1,47 @@
+body {
+  background-color: #000;
+}
+
+div {
+  display: block;
+}
+
+.content-wrapper {
+  position: relative;
+  color: #eee;
+}
+
+.subpage-slide {
+  position: absolute;
+  background-image: url(../images/gta5.jpg);
+  top:10;
+  left:0;
+  right:0;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;        
+  background-size: cover;
+  z-index: -1;
+  height: 100%;
+  max-height: 750px;
+}
+
+.body-content {
+  margin-top:15px;
+}
+
+.header-logo {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding-top:90px;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.opa50 {
+  opacity: 0.90;
+}
