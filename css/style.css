@@ -12,19 +12,19 @@ div {
 }
 
 .subpage-slide {
-  position: absolute;
-  background-image: url(../images/RDR2.jpg);
-  top:10;
-  left:0;
-  right:0;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;        
-  background-size: cover;
-  z-index: -1;
-  height: 150%;
-  max-height: 3000px;
+    position: absolute;
+    background-image: url(../images/RDR2.jpg);
+    top: 10px;
+    left:0;
+    right:0;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+    height: 150%;
+    max-height: 3000px;
 }
 
 .body-content {
