@@ -24,7 +24,7 @@ div {
     background-size: cover;
     z-index: -1;
     height: 100%;
-    max-height: 750px;
+    max-height: 1280px;
 }
 
 .body-content {
