@@ -14,10 +14,13 @@ div {
 .subpage-slide {
     position: absolute;
     background-image: url(../images/RDR2-2.jpg);
-    top: -5%;
+    top: 1%;
     left: 0;
     right: 0;
     width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: 100%;
     z-index: -1;
     height: 150%;
