@@ -55,7 +55,7 @@ body {
   display: block;
   position: relative;
   margin: 0 auto;
-  padding-top:90px;
+  padding-top:150px;
 }
 
 .bg-black {
@@ -350,3 +350,6 @@ h1 {
         color: #000;
     }
 
+.discord-button {
+    top: -10px;
+}
