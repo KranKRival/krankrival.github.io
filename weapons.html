@@ -128,11 +128,14 @@
                             <a href="https://discord.gg/rWWTcn" target="_blank" class="discord-button">Join Discord</a>
                         </li>
                     </ul>
-                    <div class="nav-collapse collapse">
-                        <audio id="BackGround_Music" controls>
+                    <div class="nav navbar-nav">
+                        <audio id="BackGround_Music" controls style="margin: 10px 0px; background-color:black">
                             <source src="sound/RDR.mp3" type="audio/mpeg">
-                            <embed name="BackGround_Music" src="sound/RDR.mp3" width="150" height="90" loop="true">
+                            <embed name="BackGround_Music" src="sound/RDR.mp3" width="150" height="120" loop="true">
                         </audio>
+                    </div>
+                    <div class="nav navbar-nav">
+                        <img src="images/Cunstruction.png" style="margin: 10px 104px" />
                     </div>
                 </div><!--/.nav-collapse -->
             </div>
@@ -146,12 +149,12 @@
             </div>
             <div class="body-content">
                 <div class="row bg-black opa50">
-                    <div class="col-lg-8"><h3>
-    <h1>"WEAPONS LIST"</h1>
-
-    <input type="button" id="ExpendAllTableDisplay" onclick="ExpendAlltoggleTable();" align="middle" style="margin: -1000px 280px; background-color:darkorange; color:red" value="Expand All">
-    <input type="button" id="CollapseAllTableDisplay" onclick="CollapseAlltoggleTable();" align="middle" style="margin: -1000px -240px; background-color:darkorange; color:red" value="Collapse All">
-</h3>
+                    <div class="col-lg-8">
+                        <h1>"WEAPONS LIST"</h1>
+                        <h3>
+                            <input type="button" id="ExpendAllTableDisplay" onclick="ExpendAlltoggleTable();" align="middle" style="margin:-500px 280px; background-color:darkorange; color:red" value="Expand All">
+                            <input type="button" id="CollapseAllTableDisplay" onclick="CollapseAlltoggleTable();" align="middle" style="margin:-500px -240px; background-color:darkorange; color:red" value="Collapse All">
+                        </h3>
                         <h2>Weapon Melee:</h2>
 
                         <ul style="list-style-type:square;">
