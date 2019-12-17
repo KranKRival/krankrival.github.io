@@ -353,3 +353,15 @@ h1 {
 .discord-button {
     top: -10px;
 }
+
+.button-style {
+    border: solid;
+}
+
+.button-style_2 {
+    border: solid;
+}
+
+.table-style {
+    margin: 10px 0px;
+}

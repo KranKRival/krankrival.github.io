@@ -152,15 +152,15 @@
                     <div class="col-lg-8">
                         <h1>"WEAPONS LIST"</h1>
                         <h3>
-                            <input type="button" id="ExpendAllTableDisplay" onclick="ExpendAlltoggleTable();" align="middle" style="margin:-500px 280px; background-color:darkorange; color:red" value="Expand All">
-                            <input type="button" id="CollapseAllTableDisplay" onclick="CollapseAlltoggleTable();" align="middle" style="margin:-500px -240px; background-color:darkorange; color:red" value="Collapse All">
+                            <input type="button" class="button-style_2" id="ExpendAllTableDisplay" onclick="ExpendAlltoggleTable();" align="middle" style="margin:-500px 280px; background-color:darkorange; color:red" value="Expand All">
+                            <input type="button" class="button-style_2" id="CollapseAllTableDisplay" onclick="CollapseAlltoggleTable();" align="middle" style="margin:-500px -240px; background-color:darkorange; color:red" value="Collapse All">
                         </h3>
                         <h2>Weapon Melee:</h2>
 
                         <ul style="list-style-type:square;">
                             <li>
-                                <input type="button" id="MeleeTableDisplay" onclick="MeleetoggleTable();" style="background-color:darkorange; color:red" value="Expand">
-                                <table id="MeleeTable" style="display: none">
+                                <input type="button" class="button-style" id="MeleeTableDisplay" onclick="MeleetoggleTable();" style="background-color:darkorange; color:red" value="Expand">
+                                <table id="MeleeTable" class="table-style" style="display: none">
                                     <tr>
                                         <td style='border:2px solid darkorange; color:red'>STRING</td>
                                         <td style='border:2px solid darkorange; color:green'>HASH</td>
@@ -228,9 +228,7 @@
                                     </tr>
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_MELEE_HATCHET_DOUBLE_BIT_RUSTED</td>
-                                        <td style='        border: 2px solid white;
-        color: lightgreen
-'>0x8F0FDE0E</td>
+                                        <td style='border:2px solid white; color: lightgreen'>0x8F0FDE0E</td>
                                         <td style='border:2px solid white; color:cornflowerblue'>2400181774</td>
                                     </tr>
                                     <tr>
@@ -265,10 +263,10 @@
                         <h2>Weapon Pistol:</h2>
                         <ul style="list-style-type:square;">
                             <li>
-                                <input type="button" id="PistolTableDisplay" onclick="PistoltoggleTable();" style="background-color:darkorange; color:red" value="Expand">
-                                <table id="PistolTable" style="display: none">
+                                <input type="button" class="button-style" id="PistolTableDisplay" onclick="PistoltoggleTable();" style="background-color:darkorange; color:red" value="Expand">
+                                <table id="PistolTable" class="table-style" style="display: none">
                                     <tr>
-                                        <td style='border: 2px solid darkorange; color: red '>STRING</td>
+                                        <td style='border:2px solid darkorange; color: red '>STRING</td>
                                         <td style='border:2px solid darkorange; color:green'>HASH</td>
                                         <td style='border:2px solid darkorange; color:deepskyblue'>Uint</td>
                                     </tr>
@@ -289,13 +287,13 @@
                                     </tr>
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_PISTOL_MAUSER</td>
-                                        <td style='border: 2px solid white; color:lightgreen'>0x8580C63E</td>
-                                        <td style='border: 2px solid white; color:cornflowerblue'>2239809086</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0x8580C63E</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>2239809086</td>
                                     </tr>
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_PISTOL_MAUSER_DRUNK</td>
                                         <td style='border:2px solid white; color:lightgreen'>0x4AAE5FFA</td>
-                                        <td style='border: 2px solid white; color:cornflowerblue'>1252941818</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>1252941818</td>
                                     </tr>
                                 </table>
                             </li>
@@ -304,20 +302,20 @@
                         <h2>Weapon Repeater:</h2>
                         <ul style="list-style-type:square;">
                             <li>
-                                <button type="button" id="toggleTableDisplay" onclick="RepeatertoggleTable();" style="background-color:darkorange; color:red">Show / Hide</button>
-                                <table id="RepeaterTable" style="display: none">
+                                <input type="button" class="button-style" id="RepeaterTableDisplay" onclick="RepeatertoggleTable();" style="background-color:darkorange; color:red" value="Expand">
+                                <table id="RepeaterTable" class="table-style" style="display: none">
                                     <tr>
                                         <td style='border:2px solid darkorange; color:red'>STRING</td>
                                         <td style='border:2px solid darkorange; color:green'>HASH</td>
-                                        <td style='border: 2px solid darkorange; color: deepskyblue'>Uint</td>
+                                        <td style='border:2px solid darkorange; color: deepskyblue'>Uint</td>
                                     </tr>
                                     <tr>
-                                        <td style='border: 2px solid white'>WEAPON_REPEATER_CARBINE</td>
+                                        <td style='border:2px solid white'>WEAPON_REPEATER_CARBINE</td>
                                         <td style='border:2px solid white; color:lightgreen'>0xF5175BA1</td>
                                         <td style='border:2px solid white; color:cornflowerblue'>4111948705</td>
                                     </tr>
                                     <tr>
-                                        <td style='border: 2px solid white'>WEAPON_REPEATER_EVANS</td>
+                                        <td style='border:2px solid white'>WEAPON_REPEATER_EVANS</td>
                                         <td style='border:2px solid white; color:lightgreen'>0x7194721E</td>
                                         <td style='border:2px solid white; color:cornflowerblue'>1905553950</td>
                                     </tr>
@@ -327,7 +325,7 @@
                                         <td style='border:2px solid white; color:cornflowerblue'>2511488402</td>
                                     </tr>
                                     <tr>
-                                        <td style='border: 2px solid white'>WEAPON_REPEATER_WINCHESTER</td>
+                                        <td style='border:2px solid white'>WEAPON_REPEATER_WINCHESTER</td>
                                         <td style='border:2px solid white; color:lightgreen'>0xA84762EC</td>
                                         <td style='border:2px solid white; color:cornflowerblue'>2823250668</td>
                                     </tr>
@@ -338,15 +336,15 @@
                         <h2>Weapon Revolver:</h2>
                         <ul style="list-style-type:square;">
                             <li>
-                                <button type="button" id="toggleTableDisplay" onclick="RevolvertoggleTable();" style="background-color:darkorange; color:red">Show / Hide</button>
-                                <table id="RevolverTable" style="display: none">
+                                <input type="button" class="button-style" id="RevolverTableDisplay" onclick="RevolvertoggleTable();" style="background-color:darkorange; color:red" value="Expand">
+                                <table id="RevolverTable" class="table-style" style="display: none">
                                     <tr>
-                                        <td style='        border: 2px solid darkorange;color: red'>STRING</td>
+                                        <td style='border: 2px solid darkorange;color: red'>STRING</td>
                                         <td style='border:2px solid darkorange; color:green'>HASH</td>
                                         <td style='border:2px solid darkorange; color:deepskyblue'>Uint</td>
                                     </tr>
                                     <tr>
-                                        <td style='border: 2px solid white'>WEAPON_REVOLVER_CATTLEMAN</td>
+                                        <td style='border:2px solid white'>WEAPON_REVOLVER_CATTLEMAN</td>
                                         <td style='border:2px solid white; color:lightgreen'>0x169F59F7</td>
                                         <td style='border:2px solid white; color:cornflowerblue'>379542007</td>
                                     </tr>
@@ -361,7 +359,7 @@
                                         <td style='border:2px solid white; color:cornflowerblue'>1529685685</td>
                                     </tr>
                                     <tr>
-                                        <td style=' border: 2px solid white'>WEAPON_REVOLVER_SCHOFIELD</td>
+                                        <td style=' border:2px solid white'>WEAPON_REVOLVER_SCHOFIELD</td>
                                         <td style='border:2px solid white; color:lightgreen'>0x7BBD1FF6</td>
                                         <td style='border:2px solid white; color:cornflowerblue'>2075992054</td>
                                     </tr>
@@ -372,8 +370,8 @@
                         <h2>Weapon Rifle:</h2>
                         <ul style="list-style-type:square;">
                             <li>
-                                <button type="button" id="toggleTableDisplay" onclick="RifletoggleTable();" style="background-color:darkorange; color:red">Show / Hide</button>
-                                <table id="RifleTable" style="display: none">
+                                <input type="button" class="button-style" id="RifleTableDisplay" onclick="RifletoggleTable();" style="background-color:darkorange; color:red" value="Expand">
+                                <table id="RifleTable" class="table-style" style="display: none">
                                     <tr>
                                         <td style='border:2px solid darkorange; color:red'>STRING</td>
                                         <td style='border:2px solid darkorange; color:green'>HASH</td>
@@ -401,8 +399,8 @@
                         <h2>Weapon SniperRifle:</h2>
                         <ul style="list-style-type:square;">
                             <li>
-                                <button type="button" id="toggleTableDisplay" onclick="SniperRifletoggleTable();" style="background-color:darkorange; color:red">Show / Hide</button>
-                                <table id="SniperRifleTable" style="display: none">
+                                <input type="button" class="button-style" id="SniperRifleTableDisplay" onclick="SniperRifletoggleTable();" style="background-color:darkorange; color:red" value="Expand">
+                                <table id="SniperRifleTable" class="table-style" style="display: none">
                                     <tr>
                                         <td style='border:2px solid darkorange; color:red'>STRING</td>
                                         <td style='border:2px solid darkorange; color:green'>HASH</td>
@@ -425,8 +423,8 @@
                         <h2>Weapon Shotgun:</h2>
                         <ul style="list-style-type:square;">
                             <li>
-                                <button type="button" id="toggleTableDisplay" onclick="ShotguntoggleTable();" style="background-color:darkorange; color:red">Show / Hide</button>
-                                <table id="ShotgunTable" style="display: none">
+                                <input type="button" class="button-style" id="ShotgunTableDisplay" onclick="ShotguntoggleTable();" style="background-color:darkorange; color:red" value="Expand">
+                                <table id="ShotgunTable" class="table-style" style="display: none">
                                     <tr>
                                         <td style='border:2px solid darkorange; color:red'>STRING</td>
                                         <td style='border:2px solid darkorange; color:green'>HASH</td>
@@ -438,7 +436,7 @@
                                         <td style='border:2px solid white; color:cornflowerblue'>1845102363</td>
                                     </tr>
                                     <tr>
-                                        <td style='border: 2px solid white'>WEAPON_SHOTGUN_PUMP</td>
+                                        <td style='border:2px solid white'>WEAPON_SHOTGUN_PUMP</td>
                                         <td style='border:2px solid white; color:lightgreen'>0x31B7B9FE</td>
                                         <td style='border:2px solid white; color:cornflowerblue'>834124286</td>
                                     </tr>
@@ -455,7 +453,7 @@
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_SHOTGUN_SEMIAUTO</td>
                                         <td style='border:2px solid white; color:lightgreen'>0x6D9BB970</td>
-                                        <td style='border: 2px solid white; color:cornflowerblue'>1838922096</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>1838922096</td>
                                     </tr>
                                 </table>
                             </li>
@@ -464,8 +462,8 @@
                         <h2>Weapon Thrown:</h2>
                         <ul style=" list-style-type: square;">
                             <li>
-                                <button type="button" id="toggleTableDisplay" onclick="ThrowntoggleTable();" style="background-color:darkorange; color:red">Show / Hide</button>
-                                <table id="ThrownTable" style="display: none">
+                                <input type="button" class="button-style" id="ThrownTableDisplay" onclick="ThrowntoggleTable();" style="background-color:darkorange; color:red" value="Expand">
+                                <table id="ThrownTable" class="table-style" style="display: none">
                                     <tr>
                                         <td style='border:2px solid darkorange; color:red'>STRING</td>
                                         <td style='border:2px solid darkorange; color:green'>HASH</td>
@@ -483,13 +481,13 @@
                                     </tr>
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_THROWN_MOLOTOV</td>
-                                        <td style='border: 2px solid white; color: lightgreen'>0x7067E7A7</td>
+                                        <td style='border:2px solid white; color: lightgreen'>0x7067E7A7</td>
                                         <td style='border:2px solid white; color:cornflowerblue'>1885857703</td>
                                     </tr>
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_THROWN_THROWING_KNIVES</td>
                                         <td style='border:2px solid white; color:lightgreen'>0xD2718D48</td>
-                                        <td style='border: 2px solid white; color:cornflowerblue'>3530657096</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>3530657096</td>
                                     </tr>
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_THROWN_TOMAHAWK</td>
@@ -497,7 +495,7 @@
                                         <td style='border:2px solid white; color:cornflowerblue'>2783539927</td>
                                     </tr>
                                     <tr>
-                                        <td style='border: 2px solid white'>WEAPON_THROWN_TOMAHAWK_ANCIENT</td>
+                                        <td style='border:2px solid white'>WEAPON_THROWN_TOMAHAWK_ANCIENT</td>
                                         <td style='border:2px solid white; color:lightgreen'>0x7F23B6C7</td>
                                         <td style='border:2px solid white; color:cornflowerblue'>2133046983</td>
                                     </tr>
@@ -507,63 +505,55 @@
 
                         <h2>Weapon Kit:</h2>
                         <ul style="list-style-type:square;">
-                            <!--
-        <li>
-            <table>
-                <tr>
-                    <td style='border:2px solid darkorange; color:red'>STRING</td>
-                    <td style='border:2px solid darkorange; color:green'>HASH</td>
-                    <td style='border:2px solid darkorange; color:deepskyblue'>Uint</td>
-                </tr>
-                <tr>
-                    <td style='border:2px solid white'>0</td>
-                    <td style='border:2px solid white'>0</td>
-                    <td style='border:2px solid white'>0</td>
-                </tr>
-                <tr>
-                    <td style='border:2px solid white'>0</td>
-                    <td style='border:2px solid white'>0</td>
-                    <td style='border:2px solid white'>0</td>
-                </tr>
-            </table>
-        </li>
-            -->
-                            <li>WEAPON_KIT_BINOCULARS</li>
-                            <li>WEAPON_KIT_CAMERA</li>
+                            <li>
+                                <input type="button" class="button-style" id="KitTableDisplay" onclick="KittoggleTable();" style="background-color:darkorange; color:red" value="Expand">
+                                <table id="KitTable" class="table-style" style="display: none">
+                                    <tr>
+                                        <td style='border:2px solid darkorange; color:red'>STRING</td>
+                                        <td style='border:2px solid darkorange; color:green'>HASH</td>
+                                        <td style='border:2px solid darkorange; color:deepskyblue'>Uint</td>
+                                    </tr>
+                                    <tr>
+                                        <td style='border:2px solid white'>WEAPON_KIT_BINOCULARS</td>
+                                        <td style='border:2px solid white'>0xF6687C5A</td>
+                                        <td style='border:2px solid white'>4134042714</td>
+                                    </tr>
+                                    <tr>
+                                        <td style='border:2px solid white'>WEAPON_KIT_CAMERA</td>
+                                        <td style='border:2px solid white'>0xC3662B7D</td>
+                                        <td style='border:2px solid white'>3278252925</td>
+                                    </tr>
+                                </table>
+                            </li>
                         </ul>
 
                         <h2>Weapon Other:</h2>
-                        <ul style="list-style-type: square;
-">
-                            <!--
-        <li>
-            <table>
-                <tr>
-                    <td style='border:2px solid darkorange; color:red'>STRING</td>
-                    <td style='border:2px solid darkorange; color:green'>HASH</td>
-                    <td style='border:2px solid darkorange; color:deepskyblue'>Uint</td>
-                </tr>
-                <tr>
-                    <td style='border:2px solid white'>0</td>
-                    <td style='border:2px solid white'>0</td>
-                    <td style='border:2px solid white'>0</td>
-                </tr>
-                <tr>
-                    <td style='border:2px solid white'>0</td>
-                    <td style='border:2px solid white'>0</td>
-                    <td style='border:2px solid white'>0</td>
-                </tr>
-                <tr>
-                    <td style='border:2px solid white'>0</td>
-                    <td style='border:2px solid white'>0</td>
-                    <td style='border:2px solid white'>0</td>
-                </tr>
-            </table>
-        </li>
-            -->
-                            <li>WEAPON_FISHINGROD</li>
-                            <li>WEAPON_LASSO</li>
-                            <li>WEAPON_BOW</li>
+                        <ul style="list-style-type: square;">
+                            <li>
+                                <input type="button" class="button-style" id="OtherTableDisplay" onclick="OthertoggleTable();" style="background-color:darkorange; color:red" value="Expand">
+                                <table id="OtherTable" class="table-style" style="display: none">
+                                    <tr>
+                                        <td style='border:2px solid darkorange; color:red'>STRING</td>
+                                        <td style='border:2px solid darkorange; color:green'>HASH</td>
+                                        <td style='border:2px solid darkorange; color:deepskyblue'>Uint</td>
+                                    </tr>
+                                    <tr>
+                                        <td style='border:2px solid white'>WEAPON_FISHINGROD</td>
+                                        <td style='border:2px solid white'>0xABA87754</td>
+                                        <td style='border:2px solid white'>2879944532</td>
+                                    </tr>
+                                    <tr>
+                                        <td style='border:2px solid white'>WEAPON_LASSO</td>
+                                        <td style='border:2px solid white'>0x7A8A724A</td>
+                                        <td style='border:2px solid white'>2055893578</td>
+                                    </tr>
+                                    <tr>
+                                        <td style='border:2px solid white'>WEAPON_BOW</td>
+                                        <td style='border:2px solid white'>0x88A8505C</td>
+                                        <td style='border:2px solid white'>2292731996</td>
+                                    </tr>
+                                </table>
+                            </li>
                         </ul>
 
                         <h2>Weapon NPC's:</h2>
@@ -920,6 +910,46 @@
         _PistolTable.style.display = "table";
         var _PistolInput = document.getElementById("PistolTableDisplay");
         _PistolInput.value = "Collapse";
+
+         var _RepeaterTable = document.getElementById("RepeaterTable");
+        _RepeaterTable.style.display = "table";
+        var _RepeaterInput = document.getElementById("RepeaterTableDisplay");
+        _RepeaterInput.value = "Collapse";
+
+        var _RevolverTable = document.getElementById("RevolverTable");
+        _RevolverTable.style.display = "table";
+        var _RevolverInput = document.getElementById("RevolverTableDisplay");
+        _RevolverInput.value = "Collapse";
+
+        var _RifleTable = document.getElementById("RifleTable");
+        _RifleTable.style.display = "table";
+        var _RifleInput = document.getElementById("RifleTableDisplay");
+        _RifleInput.value = "Collapse";
+
+        var _SniperRifleTable = document.getElementById("SniperRifleTable");
+        _SniperRifleTable.style.display = "table";
+        var _SniperRifleInput = document.getElementById("SniperRifleTableDisplay");
+        _SniperRifleInput.value = "Collapse";
+
+        var _ShotgunTable = document.getElementById("ShotgunTable");
+        _ShotgunTable.style.display = "table";
+        var _ShotgunInput = document.getElementById("ShotgunTableDisplay");
+        _ShotgunInput.value = "Collapse";
+
+        var _ThrownTable = document.getElementById("ThrownTable");
+        _ThrownTable.style.display = "table";
+        var _ThrownInput = document.getElementById("ThrownTableDisplay");
+        _ThrownInput.value = "Collapse";
+
+        var _KitTable = document.getElementById("KitTable");
+        _KitTable.style.display = "table";
+        var _KitInput = document.getElementById("KitTableDisplay");
+        _KitInput.value = "Collapse";
+
+        var _OtherTable = document.getElementById("OtherTable");
+        _OtherTable.style.display = "table";
+        var _OtherInput = document.getElementById("OtherTableDisplay");
+        _OtherInput.value = "Collapse";
         
         }
 
@@ -934,6 +964,46 @@
         _PistolTable.style.display = "none";
         var _PistolInput = document.getElementById("PistolTableDisplay");
         _PistolInput.value = "Expand";
+
+        var _RepeaterTable = document.getElementById("RepeaterTable");
+        _RepeaterTable.style.display = "none";
+        var _RepeaterInput = document.getElementById("RepeaterTableDisplay");
+        _RepeaterInput.value = "Expand";
+
+        var _RevolverTable = document.getElementById("RevolverTable");
+        _RevolverTable.style.display = "none";
+        var _RevolverInput = document.getElementById("RevolverTableDisplay");
+        _RevolverInput.value = "Expand";
+
+        var _RifleTable = document.getElementById("RifleTable");
+        _RifleTable.style.display = "none";
+        var _RifleInput = document.getElementById("RifleTableDisplay");
+        _RifleInput.value = "Expand";
+
+         var _SniperRifleTable = document.getElementById("SniperRifleTable");
+        _SniperRifleTable.style.display = "none";
+        var _SniperRifleInput = document.getElementById("SniperRifleTableDisplay");
+        _SniperRifleInput.value = "Expand";
+
+        var _ShotgunTable = document.getElementById("ShotgunTable");
+        _ShotgunTable.style.display = "none";
+        var _ShotgunInput = document.getElementById("ShotgunTableDisplay");
+        _ShotgunInput.value = "Expand";
+
+        var _ThrownTable = document.getElementById("ThrownTable");
+        _ThrownTable.style.display = "none";
+        var _ThrownInput = document.getElementById("ThrownTableDisplay");
+        _ThrownInput.value = "Expand";
+
+        var _KitTable = document.getElementById("KitTable");
+        _KitTable.style.display = "none";
+        var _KitInput = document.getElementById("KitTableDisplay");
+        _KitInput.value = "Expand";
+
+        var _OtherTable = document.getElementById("OtherTable");
+        _OtherTable.style.display = "none";
+        var _OtherInput = document.getElementById("OtherTableDisplay");
+        _OtherInput.value = "Expand";
         
         }
 
@@ -950,7 +1020,6 @@
         {
         _MeleeInput.value = "Expand";
         }
-        
         }
 
         
@@ -972,32 +1041,122 @@
         function RepeatertoggleTable() {
         var _RepeaterTable = document.getElementById("RepeaterTable");
         _RepeaterTable.style.display = (_RepeaterTable.style.display == "table") ? "none" : "table";
+
+        var _RepeaterInput = document.getElementById("RepeaterTableDisplay");
+        if (_RepeaterInput.value == "Expand")
+        { 
+        _RepeaterInput.value = "Collapse";
+        }
+        else
+        {
+        _RepeaterInput.value = "Expand";
+        }
         }
 
 
         function RevolvertoggleTable() {
         var _RevolverTable = document.getElementById("RevolverTable");
         _RevolverTable.style.display = (_RevolverTable.style.display == "table") ? "none" : "table";
+
+        var _RevolverInput = document.getElementById("RevolverTableDisplay");
+        if (_RevolverInput.value == "Expand")
+        { 
+        _RevolverInput.value = "Collapse";
+        }
+        else
+        {
+        _RevolverInput.value = "Expand";
+        }
         }
 
         function RifletoggleTable() {
         var _RifleTable = document.getElementById("RifleTable");
         _RifleTable.style.display = (_RifleTable.style.display == "table") ? "none" : "table";
+
+        var _RifleInput = document.getElementById("RifleTableDisplay");
+        if (_RifleInput.value == "Expand")
+        { 
+        _RifleInput.value = "Collapse";
+        }
+        else
+        {
+        _RifleInput.value = "Expand";
+        }
         }
 
         function SniperRifletoggleTable() {
         var _SniperRifleTable = document.getElementById("SniperRifleTable");
         _SniperRifleTable.style.display = (_SniperRifleTable.style.display == "table") ? "none" : "table";
+
+        var _SniperRifleInput = document.getElementById("SniperRifleTableDisplay");
+        if (_SniperRifleInput.value == "Expand")
+        { 
+        _SniperRifleInput.value = "Collapse";
+        }
+        else
+        {
+        _SniperRifleInput.value = "Expand";
+        }
         }
 
         function ShotguntoggleTable() {
         var _ShotgunTable = document.getElementById("ShotgunTable");
         _ShotgunTable.style.display = (_ShotgunTable.style.display == "table") ? "none" : "table";
+
+        var _ShotgunInput = document.getElementById("ShotgunTableDisplay");
+        if (_ShotgunInput.value == "Expand")
+        { 
+        _ShotgunInput.value = "Collapse";
+        }
+        else
+        {
+        _ShotgunInput.value = "Expand";
+        }
         }
 
         function ThrowntoggleTable() {
         var _ThrownTable = document.getElementById("ThrownTable");
         _ThrownTable.style.display = (_ThrownTable.style.display == "table") ? "none" : "table";
+
+        var _ThrownInput = document.getElementById("ThrownTableDisplay");
+        if (_ThrownInput.value == "Expand")
+        { 
+        _ThrownInput.value = "Collapse";
+        }
+        else
+        {
+        _ThrownInput.value = "Expand";
+        }
+        }
+
+        function KittoggleTable() {
+        var _KitTable = document.getElementById("KitTable");
+        _KitTable.style.display = (_KitTable.style.display == "table") ? "none" : "table";
+
+        var _KitInput = document.getElementById("KitTableDisplay");
+        if (_KitInput.value == "Expand")
+        { 
+        _KitInput.value = "Collapse";
+        }
+        else
+        {
+        _KitInput.value = "Expand";
+        }
+        }
+
+        function OthertoggleTable() {
+        var _OtherTable = document.getElementById("OtherTable");
+        _OtherTable.style.display = (_OtherTable.style.display == "table") ? "none" : "table";
+
+        var _OtherInput = document.getElementById("OtherTableDisplay");
+        if (_OtherInput.value == "Expand")
+        { 
+        _OtherInput.value = "Collapse";
+        }
+        else
+        {
+        _OtherInput.value = "Expand";
+        }
         }
 
     </script>
