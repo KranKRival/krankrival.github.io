@@ -146,14 +146,18 @@
             </div>
             <div class="body-content">
                 <div class="row bg-black opa50">
-                    <div class="col-lg-8">
-                        <h1>"WEAPONS LIST"</h1>
+                    <div class="col-lg-8"><h3>
+    <h1>"WEAPONS LIST"</h1>
 
+    <input type="button" id="ExpendAllTableDisplay" onclick="ExpendAlltoggleTable();" align="middle" style="margin: -1000px 280px; background-color:darkorange; color:red" value="Expand All">
+    <input type="button" id="CollapseAllTableDisplay" onclick="CollapseAlltoggleTable();" align="middle" style="margin: -1000px -240px; background-color:darkorange; color:red" value="Collapse All">
+</h3>
                         <h2>Weapon Melee:</h2>
-                        <ul style="list-style-type:square;">
 
+                        <ul style="list-style-type:square;">
                             <li>
-                                <table>
+                                <input type="button" id="MeleeTableDisplay" onclick="MeleetoggleTable();" style="background-color:darkorange; color:red" value="Expand">
+                                <table id="MeleeTable" style="display: none">
                                     <tr>
                                         <td style='border:2px solid darkorange; color:red'>STRING</td>
                                         <td style='border:2px solid darkorange; color:green'>HASH</td>
@@ -217,11 +221,13 @@
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_MELEE_HATCHET_DOUBLE_BIT</td>
                                         <td style='border:2px solid white; color:lightgreen'>0xBCC63763</td>
-                                        <td style='border:2px solid white; color:cornflowerblue'>3167106915</td>
+                                        <td style='border: 2px solid white; color: cornflowerblue'>3167106915</td>
                                     </tr>
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_MELEE_HATCHET_DOUBLE_BIT_RUSTED</td>
-                                        <td style='border:2px solid white; color:lightgreen'>0x8F0FDE0E</td>
+                                        <td style='        border: 2px solid white;
+        color: lightgreen
+'>0x8F0FDE0E</td>
                                         <td style='border:2px solid white; color:cornflowerblue'>2400181774</td>
                                     </tr>
                                     <tr>
@@ -256,40 +262,37 @@
                         <h2>Weapon Pistol:</h2>
                         <ul style="list-style-type:square;">
                             <li>
-                                <table>
+                                <input type="button" id="PistolTableDisplay" onclick="PistoltoggleTable();" style="background-color:darkorange; color:red" value="Expand">
+                                <table id="PistolTable" style="display: none">
                                     <tr>
-                                        <td style='        border: 2px solid darkorange;
-            color: red
-    '>
-                                            STRING
-                                        </td>
+                                        <td style='border: 2px solid darkorange; color: red '>STRING</td>
                                         <td style='border:2px solid darkorange; color:green'>HASH</td>
                                         <td style='border:2px solid darkorange; color:deepskyblue'>Uint</td>
                                     </tr>
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_PISTOL_M1899</td>
-                                        <td style='border: 2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0x5B78B8DD</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>1534638301</td>
                                     </tr>
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_PISTOL_SEMIAUTO</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0x657065D6</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>1701864918</td>
                                     </tr>
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_PISTOL_VOLCANIC</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0x20D13FF</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>34411519</td>
                                     </tr>
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_PISTOL_MAUSER</td>
-                                        <td style='border: 2px solid white'>0</td>
-                                        <td style='border: 2px solid white'>0</td>
+                                        <td style='border: 2px solid white; color:lightgreen'>0x8580C63E</td>
+                                        <td style='border: 2px solid white; color:cornflowerblue'>2239809086</td>
                                     </tr>
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_PISTOL_MAUSER_DRUNK</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border: 2px solid white'>0</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0x4AAE5FFA</td>
+                                        <td style='border: 2px solid white; color:cornflowerblue'>1252941818</td>
                                     </tr>
                                 </table>
                             </li>
@@ -298,7 +301,8 @@
                         <h2>Weapon Repeater:</h2>
                         <ul style="list-style-type:square;">
                             <li>
-                                <table>
+                                <button type="button" id="toggleTableDisplay" onclick="RepeatertoggleTable();" style="background-color:darkorange; color:red">Show / Hide</button>
+                                <table id="RepeaterTable" style="display: none">
                                     <tr>
                                         <td style='border:2px solid darkorange; color:red'>STRING</td>
                                         <td style='border:2px solid darkorange; color:green'>HASH</td>
@@ -306,33 +310,33 @@
                                     </tr>
                                     <tr>
                                         <td style='border: 2px solid white'>WEAPON_REPEATER_CARBINE</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0xF5175BA1</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>4111948705</td>
                                     </tr>
                                     <tr>
                                         <td style='border: 2px solid white'>WEAPON_REPEATER_EVANS</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0x7194721E</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>1905553950</td>
                                     </tr>
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_REPEATER_HENRY</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0x95B24592</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>2511488402</td>
                                     </tr>
                                     <tr>
                                         <td style='border: 2px solid white'>WEAPON_REPEATER_WINCHESTER</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0xA84762EC</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>2823250668</td>
                                     </tr>
                                 </table>
                             </li>
-
                         </ul>
 
                         <h2>Weapon Revolver:</h2>
                         <ul style="list-style-type:square;">
                             <li>
-                                <table>
+                                <button type="button" id="toggleTableDisplay" onclick="RevolvertoggleTable();" style="background-color:darkorange; color:red">Show / Hide</button>
+                                <table id="RevolverTable" style="display: none">
                                     <tr>
                                         <td style='        border: 2px solid darkorange;color: red'>STRING</td>
                                         <td style='border:2px solid darkorange; color:green'>HASH</td>
@@ -340,23 +344,23 @@
                                     </tr>
                                     <tr>
                                         <td style='border: 2px solid white'>WEAPON_REVOLVER_CATTLEMAN</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0x169F59F7</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>379542007</td>
                                     </tr>
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_REVOLVER_DOUBLEACTION</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style=' border: 2px solid white'>0</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0x797FBF5</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>127400949</td>
                                     </tr>
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_REVOLVER_LEMAT</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0x5B2D26B5</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>1529685685</td>
                                     </tr>
                                     <tr>
                                         <td style=' border: 2px solid white'>WEAPON_REVOLVER_SCHOFIELD</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0x7BBD1FF6</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>2075992054</td>
                                     </tr>
                                 </table>
                             </li>
@@ -365,7 +369,8 @@
                         <h2>Weapon Rifle:</h2>
                         <ul style="list-style-type:square;">
                             <li>
-                                <table>
+                                <button type="button" id="toggleTableDisplay" onclick="RifletoggleTable();" style="background-color:darkorange; color:red">Show / Hide</button>
+                                <table id="RifleTable" style="display: none">
                                     <tr>
                                         <td style='border:2px solid darkorange; color:red'>STRING</td>
                                         <td style='border:2px solid darkorange; color:green'>HASH</td>
@@ -373,18 +378,18 @@
                                     </tr>
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_RIFLE_BOLTACTION</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0x772C8DD6</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>1999408598</td>
                                     </tr>
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_RIFLE_SPRINGFIELD</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0x63F46DE6</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>1676963302</td>
                                     </tr>
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_RIFLE_VARMINT</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0xDDF7BC1E</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>3724000286</td>
                                     </tr>
                                 </table>
                             </li>
@@ -393,7 +398,8 @@
                         <h2>Weapon SniperRifle:</h2>
                         <ul style="list-style-type:square;">
                             <li>
-                                <table>
+                                <button type="button" id="toggleTableDisplay" onclick="SniperRifletoggleTable();" style="background-color:darkorange; color:red">Show / Hide</button>
+                                <table id="SniperRifleTable" style="display: none">
                                     <tr>
                                         <td style='border:2px solid darkorange; color:red'>STRING</td>
                                         <td style='border:2px solid darkorange; color:green'>HASH</td>
@@ -401,13 +407,13 @@
                                     </tr>
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_SNIPERRIFLE_CARCANO</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0x53944780</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>1402226560</td>
                                     </tr>
                                     <tr>
                                         <td style='border:2px solid white'>WEAPON_SNIPERRIFLE_ROLLINGBLOCK</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0xE1D2B317</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>3788682007</td>
                                     </tr>
                                 </table>
                             </li>
@@ -415,155 +421,143 @@
 
                         <h2>Weapon Shotgun:</h2>
                         <ul style="list-style-type:square;">
-                            <!--
                             <li>
-                                <table>
+                                <button type="button" id="toggleTableDisplay" onclick="ShotguntoggleTable();" style="background-color:darkorange; color:red">Show / Hide</button>
+                                <table id="ShotgunTable" style="display: none">
                                     <tr>
                                         <td style='border:2px solid darkorange; color:red'>STRING</td>
                                         <td style='border:2px solid darkorange; color:green'>HASH</td>
-                                        <td style='border:2px solid darkorange; color:deepskyblue'>Uint</td>
+                                        <td style='border:2px solid darkorange; color: deepskyblue'>Uint</td>
                                     </tr>
                                     <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white'>WEAPON_SHOTGUN_DOUBLEBARREL</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0x6DFA071B</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>1845102363</td>
                                     </tr>
                                     <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border: 2px solid white'>WEAPON_SHOTGUN_PUMP</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0x31B7B9FE</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>834124286</td>
                                     </tr>
                                     <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white'>WEAPON_SHOTGUN_REPEATING</td>
+                                        <td style='border:2px solid white; color: lightgreen'>0x63CA782A</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>1674213418</td>
                                     </tr>
                                     <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white'>WEAPON_SHOTGUN_SAWEDOFF</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0x1765A8F8</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>392538360</td>
                                     </tr>
                                     <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white'>WEAPON_SHOTGUN_SEMIAUTO</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0x6D9BB970</td>
+                                        <td style='border: 2px solid white; color:cornflowerblue'>1838922096</td>
                                     </tr>
                                 </table>
                             </li>
-                                -->
-                            <li>WEAPON_SHOTGUN_DOUBLEBARREL</li>
-                            <li>WEAPON_SHOTGUN_PUMP</li>
-                            <li>WEAPON_SHOTGUN_REPEATING</li>
-                            <li>WEAPON_SHOTGUN_SAWEDOFF</li>
-                            <li>WEAPON_SHOTGUN_SEMIAUTO</li>
                         </ul>
 
                         <h2>Weapon Thrown:</h2>
-                        <ul style="        list-style-type: square;">
-                            <!--
+                        <ul style=" list-style-type: square;">
                             <li>
-                                <table>
+                                <button type="button" id="toggleTableDisplay" onclick="ThrowntoggleTable();" style="background-color:darkorange; color:red">Show / Hide</button>
+                                <table id="ThrownTable" style="display: none">
                                     <tr>
                                         <td style='border:2px solid darkorange; color:red'>STRING</td>
                                         <td style='border:2px solid darkorange; color:green'>HASH</td>
                                         <td style='border:2px solid darkorange; color:deepskyblue'>Uint</td>
                                     </tr>
                                     <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white'>WEAPON_THROWN_BOLAS</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0x44A09550</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>1151374672</td>
                                     </tr>
                                     <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white'>WEAPON_THROWN_DYNAMITE</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0xA64DAA5E</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>2790107742</td>
                                     </tr>
                                     <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white'>WEAPON_THROWN_MOLOTOV</td>
+                                        <td style='border: 2px solid white; color: lightgreen'>0x7067E7A7</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>1885857703</td>
                                     </tr>
                                     <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white'>WEAPON_THROWN_THROWING_KNIVES</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0xD2718D48</td>
+                                        <td style='border: 2px solid white; color:cornflowerblue'>3530657096</td>
                                     </tr>
                                     <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border:2px solid white'>WEAPON_THROWN_TOMAHAWK</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0xA5E972D7</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>2783539927</td>
                                     </tr>
                                     <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
+                                        <td style='border: 2px solid white'>WEAPON_THROWN_TOMAHAWK_ANCIENT</td>
+                                        <td style='border:2px solid white; color:lightgreen'>0x7F23B6C7</td>
+                                        <td style='border:2px solid white; color:cornflowerblue'>2133046983</td>
                                     </tr>
                                 </table>
                             </li>
-                                -->
-                            <li>WEAPON_THROWN_BOLAS</li>
-                            <li>WEAPON_THROWN_DYNAMITE</li>
-                            <li>WEAPON_THROWN_MOLOTOV</li>
-                            <li>WEAPON_THROWN_THROWING_KNIVES</li>
-                            <li>WEAPON_THROWN_TOMAHAWK</li>
-                            <li>WEAPON_THROWN_TOMAHAWK_ANCIENT</li>
                         </ul>
 
                         <h2>Weapon Kit:</h2>
                         <ul style="list-style-type:square;">
                             <!--
-                            <li>
-                                <table>
-                                    <tr>
-                                        <td style='border:2px solid darkorange; color:red'>STRING</td>
-                                        <td style='border:2px solid darkorange; color:green'>HASH</td>
-                                        <td style='border:2px solid darkorange; color:deepskyblue'>Uint</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                </table>
-                            </li>
-                                -->
+        <li>
+            <table>
+                <tr>
+                    <td style='border:2px solid darkorange; color:red'>STRING</td>
+                    <td style='border:2px solid darkorange; color:green'>HASH</td>
+                    <td style='border:2px solid darkorange; color:deepskyblue'>Uint</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+            </table>
+        </li>
+            -->
                             <li>WEAPON_KIT_BINOCULARS</li>
                             <li>WEAPON_KIT_CAMERA</li>
                         </ul>
 
                         <h2>Weapon Other:</h2>
-                        <ul style="list-style-type:square;">
+                        <ul style="list-style-type: square;
+">
                             <!--
-                            <li>
-                                <table>
-                                    <tr>
-                                        <td style='border:2px solid darkorange; color:red'>STRING</td>
-                                        <td style='border:2px solid darkorange; color:green'>HASH</td>
-                                        <td style='border:2px solid darkorange; color:deepskyblue'>Uint</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                </table>
-                            </li>
-                                -->
+        <li>
+            <table>
+                <tr>
+                    <td style='border:2px solid darkorange; color:red'>STRING</td>
+                    <td style='border:2px solid darkorange; color:green'>HASH</td>
+                    <td style='border:2px solid darkorange; color:deepskyblue'>Uint</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+            </table>
+        </li>
+            -->
                             <li>WEAPON_FISHINGROD</li>
                             <li>WEAPON_LASSO</li>
                             <li>WEAPON_BOW</li>
@@ -572,266 +566,266 @@
                         <h2>Weapon NPC's:</h2>
                         <ul style="list-style-type:square;">
                             <!--
-                            <li>
-                                <table>
-                                    <tr>
-                                        <td style='border:2px solid darkorange; color:red'>STRING</td>
-                                        <td style='border:2px solid darkorange; color:green'>HASH</td>
-                                        <td style='border:2px solid darkorange; color:deepskyblue'>Uint</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                        <td style='border:2px solid white'>0</td>
-                                    </tr>
-                                </table>
-                            </li>
-                                -->
+        <li>
+            <table>
+                <tr>
+                    <td style='border:2px solid darkorange; color:red'>STRING</td>
+                    <td style='border:2px solid darkorange; color:green'>HASH</td>
+                    <td style='border:2px solid darkorange; color:deepskyblue'>Uint</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+                <tr>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                    <td style='border:2px solid white'>0</td>
+                </tr>
+            </table>
+        </li>
+            -->
                             <li>WEAPON_SNIPERRIFLE_ROLLINGBLOCK_EXOTIC</li>
                             <li>WEAPON_SNIPERRIFLE_ROLLINGBLOCK_LENNY</li>
                             <li>WEAPON_BOW_CHARLES</li>
@@ -887,13 +881,13 @@
                     <div class="col-lg-4">
                         <h3>Resources</h3>
                         <ul>
-                            <li><a href="https://alloc8or.github.io/rdr3-native-db/" target="_blank">Native DataBase (Unknown/alloc8or)</a></li>
-                            <li><a href="weapons.html">Weapons</a></li>
-                            <li><a href="pickups.html">Pickups</a></li>
-                            <li><a href="#">Vehicles</a></li>
-                            <li><a href="#">Pedestrians</a></li>
-                            <li><a href="#">Objects</a></li>
-                            <li><a href="#">Coordinates</a></li>
+                            <li><a style='color:red' href="https://alloc8or.github.io/rdr3-native-db/" target="_blank">Native DataBase (Unknown/alloc8or)</a></li>
+                            <li><a style='color:red' href="weapons.html">Weapons</a></li>
+                            <li><a style='color:red' href="pickups.html">Pickups</a></li>
+                            <li><a style='color:red' href="#">Vehicles</a></li>
+                            <li><a style='color:red' href="#">Pedestrians</a></li>
+                            <li><a style='color:red' href="#">Objects</a></li>
+                            <li><a style='color:red' href="#">Coordinates</a></li>
                         </ul>
                     </div> <!-- /.col-lg-4 -->
                 </div> <!-- /.row -->
@@ -911,5 +905,98 @@
             </div> <!-- /.body-content -->
         </div><!-- /.container -->
     </div>
+    <script>
+        function ExpendAlltoggleTable() {
+
+        var _MeleeTable = document.getElementById("MeleeTable");
+        _MeleeTable.style.display = "table";
+        var _MeleeInput = document.getElementById("MeleeTableDisplay");
+        _MeleeInput.value = "Collapse";
+
+         var _PistolTable = document.getElementById("PistolTable");
+        _PistolTable.style.display = "table";
+        var _PistolInput = document.getElementById("PistolTableDisplay");
+        _PistolInput.value = "Collapse";
+        
+        }
+
+        function CollapseAlltoggleTable() {
+
+        var _MeleeTable = document.getElementById("MeleeTable");
+        _MeleeTable.style.display = "none";
+        var _MeleeInput = document.getElementById("MeleeTableDisplay");
+        _MeleeInput.value = "Expand";
+
+         var _PistolTable = document.getElementById("PistolTable");
+        _PistolTable.style.display = "none";
+        var _PistolInput = document.getElementById("PistolTableDisplay");
+        _PistolInput.value = "Expand";
+        
+        }
+
+        function MeleetoggleTable() {
+        var _MeleeTable = document.getElementById("MeleeTable");
+        _MeleeTable.style.display = (_MeleeTable.style.display == "table") ? "none" : "table";
+
+        var _MeleeInput = document.getElementById("MeleeTableDisplay");
+        if (_MeleeInput.value == "Expand")
+        { 
+        _MeleeInput.value = "Collapse";
+        }
+        else
+        {
+        _MeleeInput.value = "Expand";
+        }
+        
+        }
+
+        
+        function PistoltoggleTable() {
+        var _PistolTable = document.getElementById("PistolTable");
+        _PistolTable.style.display = (_PistolTable.style.display == "table") ? "none" : "table";
+
+        var _PistolInput = document.getElementById("PistolTableDisplay");
+        if (_PistolInput.value == "Expand")
+        { 
+        _PistolInput.value = "Collapse";
+        }
+        else
+        {
+        _PistolInput.value = "Expand";
+        }
+        }
+
+        function RepeatertoggleTable() {
+        var _RepeaterTable = document.getElementById("RepeaterTable");
+        _RepeaterTable.style.display = (_RepeaterTable.style.display == "table") ? "none" : "table";
+        }
+
+
+        function RevolvertoggleTable() {
+        var _RevolverTable = document.getElementById("RevolverTable");
+        _RevolverTable.style.display = (_RevolverTable.style.display == "table") ? "none" : "table";
+        }
+
+        function RifletoggleTable() {
+        var _RifleTable = document.getElementById("RifleTable");
+        _RifleTable.style.display = (_RifleTable.style.display == "table") ? "none" : "table";
+        }
+
+        function SniperRifletoggleTable() {
+        var _SniperRifleTable = document.getElementById("SniperRifleTable");
+        _SniperRifleTable.style.display = (_SniperRifleTable.style.display == "table") ? "none" : "table";
+        }
+
+        function ShotguntoggleTable() {
+        var _ShotgunTable = document.getElementById("ShotgunTable");
+        _ShotgunTable.style.display = (_ShotgunTable.style.display == "table") ? "none" : "table";
+        }
+
+        function ThrowntoggleTable() {
+        var _ThrownTable = document.getElementById("ThrownTable");
+        _ThrownTable.style.display = (_ThrownTable.style.display == "table") ? "none" : "table";
+        }
+
+    </script>
 </body>
 </html>
