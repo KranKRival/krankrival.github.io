@@ -122,7 +122,7 @@
 				<div class="nav-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li><a href="index.html">Home</a></li>
-						<li class="active "><a href="joaat.html">Jenkins Hash</a></liclass="active>
+						<li class="active "><a href="joaat.html">Jenkins Hash</a></li>
 						<li>
 							<img src="images/Discord2.png" align="middle" style="margin:0px 28px" />
 							<a href="https://discord.gg/ktMUVxv" target="_blank" class="discord-button">Join Discord</a>
@@ -155,12 +155,12 @@
 						<div class="main-div">
 							<h1>"Jenkins one-at-a-time"</h1>
 							<h1>"Hash Generator"</h1>
-							<textarea class="joaat-textarea" id="inputTextArea" rows="1" title="Input" style='color:red'></textarea>
+							<textarea oninput="this.value = this.value.toLowerCase()" class="joaat-textarea" id="inputTextArea" rows="1" title="Input" style='color:red'></textarea>
 							<label style="font-size: 2.5em; vertical-align: middle; text-align: center; display: block;">&darr;</label>
 							<input type="button" class="button-style_2" id="CollapseAllTableDisplay" onclick="onHashButtonClick();" align="middle" style="margin:0px 355px; background-color:darkorange; color:red" value="HASH!">
 							<label style="font-size: 2.5em; vertical-align: middle; text-align: center; display: block;">&darr;</label>
 							<textarea class="joaat-textarea" id="outputTextArea" rows="3" style="display: none" readOnly title="Output">Signed:&#13;&#10;Unsigned:&#13;&#10;Hex:</textarea>
-							<textarea class="joaat-textarea" id="outputTextAreaCase" rows="3" readOnly title="Output (case sensetive)"  style='color:red'>Signed:&#13;&#10;Unsigned:&#13;&#10;Hex:</textarea>
+							<textarea class="joaat-textarea" id="outputTextAreaCase" rows="3" readOnly title="Output (case sensitive)" style='color:red'>Signed:&#13;&#10;Unsigned:&#13;&#10;Hex:</textarea>
 						</div>
 
 					</div> <!-- /.col-lg-8 -->
